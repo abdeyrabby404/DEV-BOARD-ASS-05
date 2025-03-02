@@ -1,3 +1,10 @@
-document.getElementById('discover-btn').addEventListener('click', function () {
+function toggleBlog() {
   window.location = './blog.html';
-});
+
+}
+
+function toggleMain() {
+  window.location = './index.html';
+}
+
+
