@@ -57,11 +57,18 @@
             DOM?
           </p>
           <p
-            class="px-[20px] py-[16px] border-t-[2px] border-primary2 border-dashed text-[rgba(0,0,0,.5)] text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            nam a temporibus suscipit autem, doloribus, nihil adipisci dicta
-            ipsam est officia facere perspiciatis similique provident quidem
-            corrupti molestiae vitae! Vitae!
+            class="px-[20px] py-[16px] border-t-[2px] border-primary2 border-dashed text-[rgba(0,0,0,.5)] text-[18px]">
+            to get a specific element by id, we can write=> <br />
+            <b>document.getElementById('id_name')</b> <br />
+            to get a specific element by class, we can write => <br />
+            <b>document.getElementsByClassName('class_name')</b> <br />
+            to get a specific element by tag name, we can write => <br />
+            <b>document.getElementsByTagName('Tag_name')</b> <br /><br />there
+            is also two more way.<br />
+            <b>document.querySelectorAll('.class_name')</b> <br />
+            <b>document.querySelector('#id_name')</b> <br />
+            if we write, <b>document.querySelector('.class_name')</b> , it will
+            return the first occurance of the element..
           </p>
         </div>
         <!-- Question -->
@@ -72,10 +79,17 @@
           </p>
           <p
             class="px-[20px] py-[16px] border-t-[2px] border-primary2 border-dashed text-[rgba(0,0,0,.5)] text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            nam a temporibus suscipit autem, doloribus, nihil adipisci dicta
-            ipsam est officia facere perspiciatis similique provident quidem
-            corrupti molestiae vitae! Vitae!
+            <b>innerHTML:</b><br />
+            Used when you need HTML structure inside an element. <br />
+            Reads all HTML tags inside the element. <br />
+            <br />
+            <b>innerText:</b> <br />
+            Retrieves only visible text (ignores hidden text). <br />
+            Does not include HTML tags. <br />
+            <br />
+            <b>textContent:</b> <br />
+            Retrieves all text content, even from hidden elements. <br />
+            Does not include HTML. <br />
           </p>
         </div>
         <!-- Question -->
@@ -85,10 +99,11 @@
           </p>
           <p
             class="px-[20px] py-[16px] border-t-[2px] border-primary2 border-dashed text-[rgba(0,0,0,.5)] text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            nam a temporibus suscipit autem, doloribus, nihil adipisci dicta
-            ipsam est officia facere perspiciatis similique provident quidem
-            corrupti molestiae vitae! Vitae!
+            Event Delegation is a technique where we attach a single event
+            listener to a parent element instead of adding event listeners to
+            multiple child elements. The event bubbles up from the child to the
+            parent, which allow the parent to handle events for all its
+            children.
           </p>
         </div>
         <!-- Question -->
@@ -98,10 +113,17 @@
           </p>
           <p
             class="px-[20px] py-[16px] border-t-[2px] border-primary2 border-dashed text-[rgba(0,0,0,.5)] text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            nam a temporibus suscipit autem, doloribus, nihil adipisci dicta
-            ipsam est officia facere perspiciatis similique provident quidem
-            corrupti molestiae vitae! Vitae!
+            Event bubbling in the DOM is a concept where an event, like a click
+            or keypress, starts from the target element and then "bubbles up" to
+            its parent elements, and then to their parents, all the way to the
+            root of the document. <br />
+            <br />
+            <b>we can stop it by,</b>
+            event.stopPropagation();
+            <br />
+            <b>we can also all the same event for same target element by,</b>
+            <br />
+            event.stopImmediatePropagation();
           </p>
         </div>
         <!-- Question -->
@@ -112,10 +134,23 @@
           </p>
           <p
             class="px-[20px] py-[16px] border-t-[2px] border-primary2 border-dashed text-[rgba(0,0,0,.5)] text-[16px]">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
-            nam a temporibus suscipit autem, doloribus, nihil adipisci dicta
-            ipsam est officia facere perspiciatis similique provident quidem
-            corrupti molestiae vitae! Vitae!
+            we can create any element by <br />
+            <b>document.createElement('element_name')</b> <br />
+            <br />
+            we can add any element as child by <br />
+            <b>parentNode.appendChild(childNode)</b> <br />
+            <br />
+            we can also add as next Sibling by <br />
+            <b>referenceNode.append(node)</b><br />
+            <br />
+            we can also add as previous Sibling by <br />
+            <b>referenceNode.before(node)</b><br />
+            <br />
+            to delete we can use <br />
+            <b>node.remove()</b><br />
+            <br />
+            to remove child we can use <br />
+            <b>parentNode.removeChild(chid)</b> <br />
           </p>
         </div>
       </div>
